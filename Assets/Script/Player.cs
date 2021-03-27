@@ -1,0 +1,106 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+
+public class Player : MonoBehaviour
+{
+    private Vector3 touchPosition;
+    private Rigidbody2D rb;
+    private Vector3 direction;
+    private float moveSpeed = 10f;
+
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
+    public GameObject deathEffect;
+
+    public static bool gameOver;
+    public GameObject RestartMenu;
+
+
+
+    // Use this for initialization
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        currentHealth = maxHealth;
+
+        healthBar.SetMaxHealth(maxHealth);
+
+        gameOver = false;
+        
+    }
+
+    public void Damage(int damage)
+    {
+        
+        currentHealth -= damage;
+
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Die();
+            gameOver = true;
+            RestartMenu.SetActive(true);
+        }
+    }
+
+    public void Heal(int dmg)
+    {
+        currentHealth += dmg;
+
+        healthBar.SetHealth(currentHealth);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Capsule"))
+        {
+            Destroy(other.gameObject);
+        }
+
+        
+    }
+
+    void Die()
+    {
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
+    }
+
+
+    
+    // Update is called once per frame
+    private void Update()
+    {
+        if (Input.touchCount > 0)
+        {
+            
+
+            Touch touch = Input.GetTouch(0);
+            touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+            touchPosition.z = 0;
+            direction = (touchPosition - transform.position);
+            rb.velocity = new Vector2(direction.x, direction.y) * moveSpeed;
+
+            if (touch.phase == TouchPhase.Ended)
+                rb.velocity = Vector2.zero;
+        }
+
+        if (currentHealth > 100)
+        {
+            currentHealth = 100;
+        }
+
+
+
+    }
+
+    
+
+}
+

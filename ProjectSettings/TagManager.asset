@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ship
+  - PlatformKiller
+  - ScreenShake
+  - Heart
+  - Capsule
+  - Obstacle
+  - Laser
+  - Coin
+  - Enemy
+  - CoinCountFollow
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - PLAYERLASER
+  - ASTRO
+  - ENEMYLASER
+  - PLAYERSHIP
+  - ENEMYSHIP
+  - HEALTHCAP
+  - COIN
+  - CoinCountFollow
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Player
+    uniqueID: 1335081019
+    locked: 0
+  - name: Background
+    uniqueID: 772561109
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
