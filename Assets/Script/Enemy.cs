@@ -21,6 +21,8 @@ public class Enemy : MonoBehaviour
 
     public GameObject drop;//your coin
     //public GameObject drop2;
+
+    [SerializeField] private float angleOffset = 90;
     
 
     private void OnDestroy() //called, when enemy will be destroyed
@@ -30,12 +32,25 @@ public class Enemy : MonoBehaviour
         
     }
 
-
-
     void Start()
     {
 
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+    }
+
+    private void Update ()
+    {
+        if(player != null)
+        {
+            var dir = player.transform.position - transform.position;
+            dir.z = 0;
+            dir.Normalize();
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle + angleOffset, Vector3.forward);
+        }
+        else
+        {
+            player = Player.Instance;
+        }
     }
 
 
