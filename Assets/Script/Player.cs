@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance { get; private set; }
+
     private Vector3 touchPosition;
     private Rigidbody2D rb;
     private Vector3 direction;
@@ -20,6 +22,11 @@ public class Player : MonoBehaviour
     public GameObject RestartMenu;
 
 
+    private void Awake()
+    {
+        Instance = this;
+
+    }
 
     // Use this for initialization
     void Start()
