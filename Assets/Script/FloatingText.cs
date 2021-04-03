@@ -17,6 +17,4 @@ public class FloatingText : MonoBehaviour
         Random.Range(-RandomizeIntensity.y, RandomizeIntensity.y),
         Random.Range(-RandomizeIntensity.z, RandomizeIntensity.z));
     }
-
-    
 }

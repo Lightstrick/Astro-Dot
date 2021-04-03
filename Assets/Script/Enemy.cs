@@ -23,10 +23,16 @@ public class Enemy : MonoBehaviour
     //public GameObject drop2;
 
     [SerializeField] private float angleOffset = 90;
+
+    private GameObject damageContainer;
     
 
     private void OnDestroy() //called, when enemy will be destroyed
     {
+        if(damageContainer != null)
+        {
+            Destroy(damageContainer);
+        }
         Instantiate(drop, transform.position, drop.transform.rotation); //your dropped coin
         //Instantiate(drop2, transform.position, drop2.transform.rotation);
         
@@ -67,18 +73,16 @@ public class Enemy : MonoBehaviour
         //Trigger floting text
         if (FloatingTextPrefab && damage > 0)
         {
-            var go = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
+            if(damageContainer == null)
+            {
+                damageContainer = new GameObject(transform.name + "_Damage_Container");
+            }
+
+            damageContainer.transform.position = transform.position;
+            var go = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, damageContainer.transform);
             go.GetComponent<TextMesh>().text = damage.ToString();
-
         }
-        
-
     }
-
-
-    
-
-
 
 
     void Die()
