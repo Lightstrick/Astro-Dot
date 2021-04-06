@@ -51,6 +51,7 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            GameManager.Instance.AccumulateScore();
             gameOver = true;
             RestartMenu.SetActive(true);
         }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ScoreScript : MonoBehaviour
 {
 
-    public static int scoreValue = 0;
+    public static int scoreValue { get; private set; }
     Text score;
     
     // Start is called before the first frame update
@@ -19,5 +19,19 @@ public class ScoreScript : MonoBehaviour
     void Update()
     {
         score.text = scoreValue.ToString();
+    }
+
+    public static void AddScore (int score)
+    {
+        scoreValue += score;
+    }
+
+    /// <summary>
+    /// Resets the scoreValue.
+    /// This should only be called after accumulating the score
+    /// </summary>
+    public static void ResetScore ()
+    {
+        scoreValue = 0;
     }
 }

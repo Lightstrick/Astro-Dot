@@ -15,7 +15,7 @@ public class Obstacle : MonoBehaviour
 
     public GameObject effect;
     public GameObject deathEffect;
-
+    [SerializeField] private int scoreValue = 5;
     
 
     private Player player;
@@ -36,7 +36,7 @@ public class Obstacle : MonoBehaviour
         if (health <= 0)
         {
             Die();
-            ScoreScript.scoreValue += 5;
+            ScoreScript.AddScore(scoreValue);
         }
 
         //Trigger floting text
