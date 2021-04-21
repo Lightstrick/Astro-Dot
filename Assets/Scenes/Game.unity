@@ -5922,10 +5922,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.47
       objectReference: {fileID: 0}
+    - target: {fileID: 5520796620227314531, guid: 84ffb881e83866047af3d509fe779233,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5520796620227314533, guid: 84ffb881e83866047af3d509fe779233,
         type: 3}
       propertyPath: refireRate
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5520796620642465341, guid: 84ffb881e83866047af3d509fe779233,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5520796620642465343, guid: 84ffb881e83866047af3d509fe779233,
         type: 3}
