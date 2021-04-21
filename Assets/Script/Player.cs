@@ -75,6 +75,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        GameManager.Instance.AccumulateScore();
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

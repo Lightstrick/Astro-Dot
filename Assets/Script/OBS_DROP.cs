@@ -10,6 +10,7 @@ public class OBS_DROP : MonoBehaviour
     public int health = 30;
     public int damage = 10;
     public float speed = 5;
+    [SerializeField] private int scoreValue = 10;
 
     public GameObject effect;
     public GameObject deathEffect;
@@ -39,7 +40,7 @@ public class OBS_DROP : MonoBehaviour
         if (health <= 0)
         {
             Die();
-            ScoreScript.scoreValue += 10;
+            ScoreScript.AddScore(scoreValue);
         }
 
         //Trigger floting text
