@@ -51,7 +51,6 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            GameManager.Instance.AccumulateScore();
             gameOver = true;
             RestartMenu.SetActive(true);
         }
@@ -76,6 +75,7 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        GameManager.Instance.AccumulateScore();
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
