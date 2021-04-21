@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] private Slider volumeSlider;
+    [SerializeField] private Text accumulatedScoreText;
 
     private void Start ()
     {
         volumeSlider.value = Options.Volume;
+
+        var score = UserData.Current.AccumulatedScore;
+        accumulatedScoreText.text = score.ToString();
     }
 
     public void PlayGame()

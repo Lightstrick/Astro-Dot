@@ -13,16 +13,15 @@ public class Enemy : MonoBehaviour
 
     public GameObject effect;
     public GameObject deathEffect;
+    [SerializeField] private float angleOffset = 90;
 
-
+    [Space]
+    [SerializeField] private int scoreValue = 5;
 
     private Player player;
 
-
     public GameObject drop;//your coin
     //public GameObject drop2;
-
-    [SerializeField] private float angleOffset = 90;
 
     private GameObject damageContainer;
     
@@ -67,7 +66,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
-            ScoreScript.scoreValue += 5;
+            ScoreScript.AddScore(scoreValue);
         }
 
         //Trigger floting text
