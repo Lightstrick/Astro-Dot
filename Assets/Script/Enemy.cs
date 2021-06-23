@@ -6,6 +6,9 @@ using UnityEngine.UI; //newchange
 public class Enemy : MonoBehaviour
 {
 
+    private static List<Enemy> availableEnemies = new List<Enemy>();
+    public static List<Enemy> AvailableEnemies => availableEnemies;
+
     public GameObject FloatingTextPrefab;
     
     public int health = 200;
@@ -37,12 +40,19 @@ public class Enemy : MonoBehaviour
         }
         //Instantiate(drop, transform.position, drop.transform.rotation);   //your dropped coin
         //Instantiate(drop2, transform.position, drop2.transform.rotation);
-        
+        if (availableEnemies.Contains(this))
+        {
+            availableEnemies.Remove(this);
+        }
     }
 
     void Start()
     {
-        
+        if (!availableEnemies.Contains(this))
+        {
+            availableEnemies.Add(this);
+        }
+
         healthBar.SetHealth(health); //newchange
     }
 
