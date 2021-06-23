@@ -21,16 +21,33 @@ public class Player : MonoBehaviour
     public static bool gameOver;
     public GameObject RestartMenu;
 
+    //start new
+    private Player player;
+    [SerializeField]
+    private GameObject shield;
+    private bool shielded;
+
+    
+
+    void NoShield()
+    {
+        shield.SetActive(false);
+        shielded = false;
+    }
+
+    //end new
 
     private void Awake()
     {
         Instance = this;
-
     }
 
     // Use this for initialization
     void Start()
     {
+
+        
+        
         rb = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
@@ -70,8 +87,23 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
         }
 
-        
+        //new
+        if (other.CompareTag("Shield"))
+        {
+            shield.SetActive(true);
+            shielded = true;
+            //code for turning off shield
+            Invoke("NoShield", 3f);
+
+            Destroy(other.gameObject);
+
+        }
+
+
     }
+
+    
+
 
     void Die()
     {
@@ -85,6 +117,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+
+        
+        
         if (Input.touchCount > 0)
         {
             

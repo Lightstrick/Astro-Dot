@@ -9,7 +9,7 @@ public class BlasterShot : MonoBehaviour
     public float moveSpeed = 30f;
 
     private float lifeTime;
-    private float maxLifetime = 0.5f;
+    private float maxLifetime = 2f;
 
     private void OnEnable()
     {

@@ -8,7 +8,7 @@ public class EnemyWeapon : MonoBehaviour
     public float moveSpeed = 30f;
 
     private float lifeTime;
-    private float maxLifetime = 2.5f;
+    private float maxLifetime = 3.5f;
 
     private void OnEnable()
     {

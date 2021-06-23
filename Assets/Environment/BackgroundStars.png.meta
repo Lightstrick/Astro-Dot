@@ -1,16 +1,7 @@
 fileFormatVersion: 2
-guid: ac5565500446432458edd48f663cbc99
+guid: 1661982ee916bb4459cc553cd9aac3f9
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6273685835725896530
-    second: MISSLIES_0
-  - first:
-      213: -5720078336561224050
-    second: MISSLIES_1
-  - first:
-      213: -3255447817012656725
-    second: MISSLIES_2
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,12 +41,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 55
+  spritePixelsToUnits: 18
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,70 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: MISSLIES_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 67
-        width: 28
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea48829c8f36fe8a0800000000000000
-      internalID: -6273685835725896530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MISSLIES_1
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 67
-        width: 28
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e866cd52f033e90b0800000000000000
-      internalID: -5720078336561224050
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MISSLIES_2
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 3
-        width: 28
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ba5c322657352d2d0800000000000000
-      internalID: -3255447817012656725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

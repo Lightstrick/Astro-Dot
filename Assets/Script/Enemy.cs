@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; //newchange
 
 public class Enemy : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class Enemy : MonoBehaviour
     
     public int health = 200;
     public int damage = 10;
-    
+
+    public HealthBar healthBar; //new
+
 
     public GameObject effect;
     public GameObject deathEffect;
@@ -20,7 +23,7 @@ public class Enemy : MonoBehaviour
 
     private Player player;
 
-    public GameObject drop;//your coin
+    //public GameObject drop;  //your coin
     //public GameObject drop2;
 
     private GameObject damageContainer;
@@ -32,14 +35,15 @@ public class Enemy : MonoBehaviour
         {
             Destroy(damageContainer);
         }
-        Instantiate(drop, transform.position, drop.transform.rotation); //your dropped coin
+        //Instantiate(drop, transform.position, drop.transform.rotation);   //your dropped coin
         //Instantiate(drop2, transform.position, drop2.transform.rotation);
         
     }
 
     void Start()
     {
-
+        
+        healthBar.SetHealth(health); //newchange
     }
 
     private void Update ()
@@ -62,6 +66,8 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+
+        healthBar.SetHealth(health); //newchange
 
         if (health <= 0)
         {

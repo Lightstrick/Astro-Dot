@@ -15,7 +15,7 @@ public class Heal : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            player.Heal(15);
+            player.Heal(20);
         }
     }
 }
