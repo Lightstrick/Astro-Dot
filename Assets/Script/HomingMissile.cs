@@ -52,6 +52,11 @@ public class HomingMissile : MonoBehaviour
             target = Enemy.AvailableEnemies[0].transform;
         }
 
+        if (BossEnemy.AvailableEnemies != null && BossEnemy.AvailableEnemies.Count > 0)
+        {
+            target = BossEnemy.AvailableEnemies[0].transform;
+        }
+
         /*var targetObject = GameObject.FindGameObjectWithTag("Enemy");
 
         if (targetObject != null)
@@ -93,12 +98,12 @@ public class HomingMissile : MonoBehaviour
 
         }
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        //Instantiate(impactEffect, transform.position, transform.rotation);
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
 
-
+        
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         if (enemy != null)
         {
@@ -106,10 +111,16 @@ public class HomingMissile : MonoBehaviour
 
         }
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        BossEnemy bossEnemy = hitInfo.GetComponent<BossEnemy>();
+        if (bossEnemy != null)
+        {
+            bossEnemy.TakeDamage(damage);
+        }
 
-        Destroy(gameObject);
+        //Instantiate(impactEffect, transform.position, transform.rotation);
 
+        //Destroy(gameObject);
+        
 
 
         OBS_DROP obs = hitInfo.GetComponent<OBS_DROP>();
@@ -119,9 +130,9 @@ public class HomingMissile : MonoBehaviour
 
         }
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        //Instantiate(impactEffect, transform.position, transform.rotation);
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
         
         HealImpact healimpact = hitInfo.GetComponent<HealImpact>();
@@ -133,9 +144,9 @@ public class HomingMissile : MonoBehaviour
         }
         
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        //Instantiate(impactEffect, transform.position, transform.rotation);
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
 
 
         Loot loot = hitInfo.GetComponent<Loot>();

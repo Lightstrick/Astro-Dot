@@ -2134,11 +2134,12 @@ MonoBehaviour:
     - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 20
-    noOfEnemies: 4
+    noOfEnemies: 5
     typeOfEnemies:
     - {fileID: 1683138360248251128, guid: 3095bb6fa8c6964459b602528a3e1808, type: 3}
     - {fileID: 1683138360248251128, guid: 24be54bba298a6d4fa8fdbf5360dca5b, type: 3}
     - {fileID: 1683138360248251128, guid: e4600a008d4d64846bd561a38fb8047d, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
     spawnInterval: 0.7
   - waveName: BONUS!
@@ -2174,7 +2175,7 @@ MonoBehaviour:
     - {fileID: 1683138360248251128, guid: acc77ec1a5b32cf4cbe6b9f1431e34cd, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 25
-    noOfEnemies: 6
+    noOfEnemies: 7
     typeOfEnemies:
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
     - {fileID: 1683138360248251128, guid: e543851827ff2c843b4eaa3a014d9ecc, type: 3}
@@ -2182,6 +2183,7 @@ MonoBehaviour:
     - {fileID: 7841817416194646625, guid: 61f816769404f2d40adc83a1ce02d481, type: 3}
     - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     spawnInterval: 0.7
   - waveName: BONUS!!
     noOfEnemies: 5

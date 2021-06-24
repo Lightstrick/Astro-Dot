@@ -24,8 +24,8 @@ public class MissilePooled : MonoBehaviour
     private void Fire()
     {
         var shot = MissileShootPooled.Instance.Get();
-        shot.transform.rotation = transform.rotation;
         shot.transform.position = transform.position;
+        shot.transform.rotation = transform.rotation;
         shot.gameObject.SetActive(true);
     }
 }
