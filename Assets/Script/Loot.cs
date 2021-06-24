@@ -9,8 +9,19 @@ public class Loot : MonoBehaviour
 
     public int health = 200;
 
-
     public GameObject deathEffect;
+
+    public GameObject drop;//your item
+
+    
+
+
+    
+
+    public void OnDestroy() //called, when enemy will be destroyed
+    {
+        Instantiate(drop, transform.position, drop.transform.rotation); //your dropped item
+    }
 
     public void TakeDamage(int damage)
     {

@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 3859854127765659394}
   - component: {fileID: 3859854127765659395}
   - component: {fileID: 3859854127765659396}
-  m_Layer: 0
+  - component: {fileID: 7708477521166573311}
+  - component: {fileID: -5256982513694864002}
+  m_Layer: 18
   m_Name: MissileNew
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,3 +119,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96906ffa8be10d242b5f180cbd054b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2.5
+  rotateSpeed: 250
+  damage: 30
+  impactEffect: {fileID: 7054531295905894246, guid: f423ef85f3fb6d545886d838750fe329,
+    type: 3}
+--- !u!70 &7708477521166573311
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3859854127765659397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.009128347}
+  m_Size: {x: 0.14164779, y: 0.300427}
+  m_Direction: 0
+--- !u!114 &-5256982513694864002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3859854127765659397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e2a7dfb3658dd94cb88f239d2f5a24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 2

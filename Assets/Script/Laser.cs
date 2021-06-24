@@ -50,6 +50,17 @@ public class Laser : MonoBehaviour
 
         Destroy(gameObject);
 
+        BossEnemy bossEnemy = hitInfo.GetComponent<BossEnemy>();
+        if (bossEnemy != null)
+        {
+            bossEnemy.TakeDamage(damage);
+
+        }
+
+        Instantiate(impactEffect, transform.position, transform.rotation);
+
+        Destroy(gameObject);
+
 
 
         OBS_DROP obs = hitInfo.GetComponent<OBS_DROP>();

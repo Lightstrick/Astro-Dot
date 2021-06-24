@@ -9,7 +9,7 @@ public class EnemyBlasterShotPooled : MonoBehaviour
     public EnemyWeapon blasterShotPrefab;
 
 
-    private Queue<EnemyWeapon> blasterShots = new Queue<EnemyWeapon>();
+    public Queue<EnemyWeapon> blasterShots = new Queue<EnemyWeapon>();
 
     public static EnemyBlasterShotPooled Instance { get; private set; }
 

@@ -10,18 +10,18 @@ public class ShipMovement : MonoBehaviour
 
     void Start()
     {
-        moveSpeed = 1f;
+        moveSpeed = 2f;
         moveRight = true;
     }
 
 
     void Update()
     {
-        if (transform.position.x > 0.3f)
+        if (transform.position.x > 1f)
         {
             moveRight = false;
         }
-        else if (transform.position.x < -0.3f)
+        else if (transform.position.x < -1f)
         {
             moveRight = true;
         }

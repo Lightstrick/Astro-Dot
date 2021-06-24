@@ -7,7 +7,7 @@ public class EnemyLaser : MonoBehaviour
     public int damage = 10;
     
     public GameObject impactEffect;
-    public Rigidbody2D rb;
+    //public Rigidbody2D rb;
 
    
 

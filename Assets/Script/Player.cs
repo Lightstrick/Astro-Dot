@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
             shield.SetActive(true);
             shielded = true;
             //code for turning off shield
-            Invoke("NoShield", 3f);
+            Invoke("NoShield", 4f);
 
             Destroy(other.gameObject);
 

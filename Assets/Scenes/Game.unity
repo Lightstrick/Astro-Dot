@@ -2008,11 +2008,12 @@ MonoBehaviour:
     - {fileID: 7841817416194646625, guid: 9077a0f89acb8314995d7408475e387d, type: 3}
     spawnInterval: 0.5
   - waveName: Wave 6
-    noOfEnemies: 5
+    noOfEnemies: 6
     typeOfEnemies:
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
     - {fileID: 7841817416194646625, guid: 61f816769404f2d40adc83a1ce02d481, type: 3}
     - {fileID: 5505592021320673587, guid: f7b9b899578847b499ec7c416dc76834, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 1683138360248251128, guid: acc77ec1a5b32cf4cbe6b9f1431e34cd, type: 3}
     - {fileID: 7841817416194646625, guid: 9077a0f89acb8314995d7408475e387d, type: 3}
     spawnInterval: 0.5
@@ -2027,10 +2028,11 @@ MonoBehaviour:
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 8
-    noOfEnemies: 4
+    noOfEnemies: 5
     typeOfEnemies:
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
     - {fileID: 264040138386420952, guid: 1ca4e3c186d70b64ca3d88050fc866ea, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 7841817416194646625, guid: 9077a0f89acb8314995d7408475e387d, type: 3}
     - {fileID: 5505592021320673587, guid: f7b9b899578847b499ec7c416dc76834, type: 3}
     spawnInterval: 0.5
@@ -2052,10 +2054,14 @@ MonoBehaviour:
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
     spawnInterval: 0.5
   - waveName: WARNING!
-    noOfEnemies: 1
+    noOfEnemies: 5
     typeOfEnemies:
-    - {fileID: 264040138386420952, guid: 8d379faf297c94840837301a122a0f1d, type: 3}
-    spawnInterval: 0
+    - {fileID: 7884723372107112186, guid: 0bae06f90e738684eb9958714208a891, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
+    spawnInterval: 6
   - waveName: Wave 12
     noOfEnemies: 2
     typeOfEnemies:
@@ -2088,16 +2094,19 @@ MonoBehaviour:
     - {fileID: 1683138360248251128, guid: 5cb347bfcdad22d40b5d794e1647a8eb, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 16
-    noOfEnemies: 4
+    noOfEnemies: 6
     typeOfEnemies:
     - {fileID: 1683138360248251128, guid: e543851827ff2c843b4eaa3a014d9ecc, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     - {fileID: 1683138360248251128, guid: 5cb347bfcdad22d40b5d794e1647a8eb, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 7841817416194646625, guid: 61f816769404f2d40adc83a1ce02d481, type: 3}
     - {fileID: 264040138386420952, guid: 1ca4e3c186d70b64ca3d88050fc866ea, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 17
-    noOfEnemies: 4
+    noOfEnemies: 5
     typeOfEnemies:
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     - {fileID: 1683138360248251128, guid: 5cb347bfcdad22d40b5d794e1647a8eb, type: 3}
     - {fileID: 1683138360248251128, guid: 3095bb6fa8c6964459b602528a3e1808, type: 3}
     - {fileID: 1683138360248251128, guid: e4600a008d4d64846bd561a38fb8047d, type: 3}
@@ -2113,14 +2122,16 @@ MonoBehaviour:
     - {fileID: 1683138360248251128, guid: 3095bb6fa8c6964459b602528a3e1808, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 19
-    noOfEnemies: 6
+    noOfEnemies: 8
     typeOfEnemies:
     - {fileID: 1683138360248251128, guid: c0d0270c5ef1023429fffe71ac04d639, type: 3}
     - {fileID: 1683138360248251128, guid: 5cb347bfcdad22d40b5d794e1647a8eb, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 1683138360248251128, guid: e4600a008d4d64846bd561a38fb8047d, type: 3}
     - {fileID: 1683138360248251128, guid: e543851827ff2c843b4eaa3a014d9ecc, type: 3}
     - {fileID: 1683138360248251128, guid: 3095bb6fa8c6964459b602528a3e1808, type: 3}
     - {fileID: 1683138360248251128, guid: 24be54bba298a6d4fa8fdbf5360dca5b, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 20
     noOfEnemies: 4
@@ -2135,15 +2146,16 @@ MonoBehaviour:
     typeOfEnemies:
     - {fileID: 7093033167870581273, guid: 21045f9b1f276ac4d86565504a2ff33b, type: 3}
     - {fileID: 7695608882748557821, guid: fd215d37f1643034c8baad6626c79eaa, type: 3}
-    - {fileID: 313964253338350322, guid: 0f6e7f51adbb77541805453bc051d365, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     - {fileID: 6393309632770190981, guid: 782069a3079e28e409f9ee7af522ea39, type: 3}
     - {fileID: 6908448090851217494, guid: 6cfb336c3f711214195005a564e56f04, type: 3}
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
     spawnInterval: 0.7
   - waveName: LOOT!
-    noOfEnemies: 1
+    noOfEnemies: 2
     typeOfEnemies:
-    - {fileID: 2431495271699920824, guid: 9964f2b1e289b7d4b9733a536174a609, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     spawnInterval: 1
   - waveName: Wave 23
     noOfEnemies: 4
@@ -2168,7 +2180,7 @@ MonoBehaviour:
     - {fileID: 1683138360248251128, guid: e543851827ff2c843b4eaa3a014d9ecc, type: 3}
     - {fileID: 1683138360248251128, guid: c0d0270c5ef1023429fffe71ac04d639, type: 3}
     - {fileID: 7841817416194646625, guid: 61f816769404f2d40adc83a1ce02d481, type: 3}
-    - {fileID: 6908448090851217494, guid: 6cfb336c3f711214195005a564e56f04, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
     spawnInterval: 0.7
   - waveName: BONUS!!
@@ -2178,7 +2190,7 @@ MonoBehaviour:
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
     - {fileID: 6393309632770190981, guid: 782069a3079e28e409f9ee7af522ea39, type: 3}
     - {fileID: 6908448090851217494, guid: 6cfb336c3f711214195005a564e56f04, type: 3}
-    - {fileID: 7695608882748557821, guid: fd215d37f1643034c8baad6626c79eaa, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 27
     noOfEnemies: 5
@@ -2187,14 +2199,14 @@ MonoBehaviour:
     - {fileID: 7841817416194646625, guid: 9077a0f89acb8314995d7408475e387d, type: 3}
     - {fileID: 1683138360248251128, guid: 5cb347bfcdad22d40b5d794e1647a8eb, type: 3}
     - {fileID: 264040138386420952, guid: 1ca4e3c186d70b64ca3d88050fc866ea, type: 3}
-    - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     spawnInterval: 0.7
   - waveName: Wave 28
     noOfEnemies: 7
     typeOfEnemies:
     - {fileID: 5505592021320673587, guid: f7b9b899578847b499ec7c416dc76834, type: 3}
     - {fileID: 264040138386420952, guid: 3895843334d400045996e4d391d9e035, type: 3}
-    - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
     - {fileID: 7841817416194646625, guid: 9077a0f89acb8314995d7408475e387d, type: 3}
     - {fileID: 1683138360248251128, guid: e4600a008d4d64846bd561a38fb8047d, type: 3}
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
@@ -2212,10 +2224,14 @@ MonoBehaviour:
     - {fileID: 6908448090851217494, guid: 9b33707ffba218c4d94be805d641a21c, type: 3}
     spawnInterval: 0.7
   - waveName: WARNING!
-    noOfEnemies: 1
+    noOfEnemies: 5
     typeOfEnemies:
-    - {fileID: 7884723372107112186, guid: 0bae06f90e738684eb9958714208a891, type: 3}
-    spawnInterval: 0
+    - {fileID: 264040138386420952, guid: 8d379faf297c94840837301a122a0f1d, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
+    - {fileID: 4259210455203625089, guid: 641b4a6da0b7b9c4b9945992a13db64b, type: 3}
+    - {fileID: 4869784952831321907, guid: 23e1e8d0e8cafb4439d16c714f1b03ee, type: 3}
+    spawnInterval: 6
   spawnPoints:
   - {fileID: 15476896}
   - {fileID: 145073547}
