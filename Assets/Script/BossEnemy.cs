@@ -24,7 +24,7 @@ public class BossEnemy : MonoBehaviour
 
     private Player player;
 
-    //public GameObject drop;  //your coin
+    public GameObject drop;  //your PowerUp
     //public GameObject drop2;
 
     private GameObject damageContainer;
@@ -36,7 +36,7 @@ public class BossEnemy : MonoBehaviour
         {
             Destroy(damageContainer);
         }
-        //Instantiate(drop, transform.position, drop.transform.rotation);   //your dropped coin
+        Instantiate(drop, transform.position, drop.transform.rotation);   //your dropped PowerUp
         //Instantiate(drop2, transform.position, drop2.transform.rotation);
         if (availableEnemies.Contains(this))
         {

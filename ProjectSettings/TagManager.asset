@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - CoinCountFollow
   - Shield
+  - Missile
   layers:
   - Default
   - TransparentFX

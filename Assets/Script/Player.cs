@@ -6,7 +6,19 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
+
     public static Player Instance { get; private set; }
+
+    private Player player;
+
+    [SerializeField]
+    private GameObject shield;
+    private bool shielded;
+
+    [SerializeField]
+    private GameObject missile; //new
+    private bool missileGo;
 
     private Vector3 touchPosition;
     private Rigidbody2D rb;
@@ -21,18 +33,18 @@ public class Player : MonoBehaviour
     public static bool gameOver;
     public GameObject RestartMenu;
 
-    //start new
-    private Player player;
-    [SerializeField]
-    private GameObject shield;
-    private bool shielded;
-
-    
-
+   
     void NoShield()
     {
         shield.SetActive(false);
         shielded = false;
+    }
+
+    //new
+    void NoMissile()
+    {
+        missile.SetActive(false);
+        missileGo = false;
     }
 
     //end new
@@ -99,6 +111,13 @@ public class Player : MonoBehaviour
 
         }
 
+        if (other.CompareTag("Missile"))
+        {
+            missile.SetActive(true);
+            missileGo = true;
+
+            Destroy(other.gameObject);
+        }
 
     }
 
