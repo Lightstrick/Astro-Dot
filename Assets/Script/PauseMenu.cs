@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    
+
     void Update()
     {
         
@@ -23,7 +25,8 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-  
+
+
     }
 
     public void Continue()

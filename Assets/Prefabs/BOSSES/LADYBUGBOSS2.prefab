@@ -686,14 +686,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FloatingTextPrefab: {fileID: 5413054651705499024, guid: 6ab532d225faa5740b86e8459b6cda3d,
     type: 3}
-  health: 500
+  health: 600
   damage: 200
   healthBar: {fileID: 4638338558835307811}
   effect: {fileID: 4830170307280952626, guid: fab7f7a0616af5f419223dc5dded7ca2, type: 3}
   deathEffect: {fileID: 4830170307280952626, guid: fab7f7a0616af5f419223dc5dded7ca2,
     type: 3}
   scoreValue: 50
-  drop: {fileID: 5133675369286519394, guid: 08d50ad77219f33459779212ebc1bc57, type: 3}
 --- !u!1 &8245771327712013846
 GameObject:
   m_ObjectHideFlags: 0

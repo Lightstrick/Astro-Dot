@@ -24,8 +24,7 @@ public class Obstacle : MonoBehaviour
 
     void Start()
     {
-        
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = Player.Instance;
     }
 
 
@@ -44,13 +43,11 @@ public class Obstacle : MonoBehaviour
         {
             var go = Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
             go.GetComponent<TextMesh>().text = damage.ToString();
-
         }
     }
     
     private void Update()
-    {
-        
+    { 
         transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
 
@@ -58,7 +55,6 @@ public class Obstacle : MonoBehaviour
 
     void Die()
     {
-        
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
@@ -68,25 +64,15 @@ public class Obstacle : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-         
-
         if (other.CompareTag("Player"))
         {
            
             Instantiate(effect, transform.position, Quaternion.identity);
-            other.GetComponent<Player>().currentHealth -= damage;
+            player.currentHealth -= damage;
+            player.Damage(5);
             Destroy(gameObject);
         }
 
-        if (other.CompareTag("Player"))
-        {
-            player.Damage(5);
-        }
-
- 
     }
-
-    
-    
 
 }

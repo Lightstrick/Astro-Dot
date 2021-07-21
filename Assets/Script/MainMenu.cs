@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
@@ -26,8 +27,12 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void UpdateVolume ()
+
+    public AudioMixer audioMixer;
+    public void UpdateVolume (float volume)
     {
         Options.SetVolume(volumeSlider.value);
+        audioMixer.SetFloat("volume", volume);
+        Debug.Log(volume);
     }
 }

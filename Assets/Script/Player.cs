@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
 
-
+    
     public static Player Instance { get; private set; }
 
     private Player player;
@@ -57,9 +57,7 @@ public class Player : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-        
-        
+ 
         rb = GetComponent<Rigidbody2D>();
 
         currentHealth = maxHealth;
@@ -72,23 +70,20 @@ public class Player : MonoBehaviour
 
     public void Damage(int damage)
     {
-        
         currentHealth -= damage;
-
         healthBar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
             Die();
             gameOver = true;
-            RestartMenu.SetActive(true);
+            RestartMenu.SetActive(true);           
         }
     }
 
     public void Heal(int dmg)
     {
         currentHealth += dmg;
-
         healthBar.SetHealth(currentHealth);
     }
 
@@ -108,17 +103,14 @@ public class Player : MonoBehaviour
             Invoke("NoShield", 4f);
 
             Destroy(other.gameObject);
-
         }
 
         if (other.CompareTag("Missile"))
         {
             missile.SetActive(true);
             missileGo = true;
-
             Destroy(other.gameObject);
         }
-
     }
 
     
